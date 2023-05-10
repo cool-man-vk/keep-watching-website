@@ -14,7 +14,7 @@ app.use(express.json( { extended: false } ))
 
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://keep-watching-frontend.onrender.com",
     credentials: true
 }))
 

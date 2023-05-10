@@ -202,7 +202,7 @@ passport.authenticate("google"),
     // console.log("req.body = ", req.body)
     // id = req.user.id
 
-    // res.redirect("http://localhost:3000/")
+    // res.redirect("https://keep-watching-frontend.onrender.com/")
     res.json(req.user)
 });
 
