@@ -135,7 +135,7 @@ const SignIn = (props) => {
     <div className="signin-container">
         <div className="signin">
             <EggLogo className="eggLogo"/>
-            <h3>Sign in to keepwatching.io</h3>      
+            <h3>Sign in to Keep Watching</h3>      
             <form onSubmit={handelSubmit} autocomplete="off">                     
             <div className="inputField">
                     <label className="label" >
@@ -162,7 +162,7 @@ const SignIn = (props) => {
                 }
             </form>
                 <div className="signUpBlock">
-                    Don't  have an account?  <Link to="/signup">Sign Up here</Link>
+                    Don't have an account?  <Link to="/signup">Sign Up here</Link>
                 </div>
         </div>
     </div>

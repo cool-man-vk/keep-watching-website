@@ -7,7 +7,6 @@ import {
 
 //  Importing components
 import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer"
 //  importing page components
 import Alerts from "./components/Alerts/Alerts"
 import Home from "./pages/Home"
@@ -50,8 +49,7 @@ const App = () =>{
                             <Route exact path="/user/:userID" component={UserPage} />
                             {/* The next route will be called if none of the above urls match up */}
                             <Route component={NotFound}/>          
-                        </Switch>
-                        <Footer />        
+                        </Switch>      
                         <GlobalStyle />
                     </Router>
                 </AuthState>

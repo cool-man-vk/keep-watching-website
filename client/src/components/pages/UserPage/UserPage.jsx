@@ -153,7 +153,14 @@ const UserPage = (props) => {
                                             followers.map(follower => {
                                                 return (
                                                     <div className="styled-border m5 p5">
-                                                        <Link to={"/user/" + follower[0]}><i className="fa fa-user" aria-hidden="true"></i> {follower[1]}</Link>
+                                                        {
+                                                            follower.map((f, index) => {
+                                                                return (
+                                                                    <Link to={"/user/" + f}><i className="fa fa-user" aria-hidden="true"></i> {f}</Link>
+
+                                                                );
+                                                            })
+                                                        }
                                                     </div>
                                                 )
                                             })

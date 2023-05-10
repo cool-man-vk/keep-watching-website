@@ -285,7 +285,7 @@ const SignUp = (props) =>{
                 
                 </form>
                 <div className="signUpBlock">
-                    Already  have an account?  <Link to="/signin">Sign In here</Link>
+                    Already have an account?  <Link to="/signin">Sign In here</Link>
                 </div>
             </div>
         </div>
