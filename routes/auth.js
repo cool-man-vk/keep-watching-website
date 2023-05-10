@@ -17,7 +17,7 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
 const router = express.Router();
 router.use(cors({
-    origin: "http://localhost:5000",      // <------- host for the react app
+    origin: "https://moviedatabase-1bhw.onrender.com/",      // <------- host for the react app
     credentials: true
 }));
 router.use(passport.initialize());
@@ -109,7 +109,7 @@ passport.deserializeUser( (user, cb) => {
 passport.use(new GoogleStrategy({
     clientID: keys.GOOGLE.clientID,
     clientSecret: keys.GOOGLE.clientSecret,
-    callbackURL: "http://localhost:5000/api/auth/google/callback"
+    callbackURL: "https://moviedatabase-1bhw.onrender.com/api/auth/google/callback"
 },
 async (accessToken, refreshToken, profile, cb) => {
 
