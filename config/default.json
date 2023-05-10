@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://suriyaprakash:suriya@123@cluster0.bgy8pcq.mongodb.net/",
+  "jwtSecret": "6iJyR3sPDUKR_JmTQehHKiEcUBtswFjm8yepZ6lTbzpbKchUM13J5MTW6Fbz1p3-"
+}

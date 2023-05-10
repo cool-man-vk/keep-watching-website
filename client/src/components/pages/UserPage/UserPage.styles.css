@@ -1,0 +1,229 @@
+.user-page-container{
+    width: 100%;
+    max-width: 1280px;
+    /* border: 1px solid red; */
+    margin: auto;
+    min-height: 90vh;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 10px;
+
+
+}
+
+.user-page-container a{
+    color: black;
+
+}
+.user-page-container a:hover{
+    color: #316aff;
+
+}
+.user-info{
+    padding: 10px;
+    box-shadow: 0 0 10px -1px rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.displaypic{
+    max-width: 150px;
+    min-width: 75px;
+    width : 20%;
+    /* border: 1px solid red; */
+    text-align: center;
+
+}
+
+
+
+
+.user-reviews{
+    /* border: 1px solid green; */
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 0 10px ;
+}
+.userWatchlist{
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 0 10px ;
+}
+
+.activity{
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 30   0px;
+    width: 48%;
+    /* border: 1px solid rgba(0,0,0,.05); */
+    /* position: relative; */
+    box-sizing: border-box;
+    box-shadow: 0 0 10px -1px rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px
+}
+.avtivity-title{
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    padding: 10px;
+    max-width: 600px;
+    /* width: 90%; */
+    box-shadow: 0 0 10px -1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border-bottom: black;
+    
+    /* top:0; */
+}
+.avtivity-title span{
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.m50{
+    margin: 50px;
+}
+.m5{
+    margin: 5px;
+}
+.p5{
+    padding: 5px;
+}
+
+.grid-container {
+    display: grid;
+    /* BORDER: 1PX SOLID RED; */
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin-left: 50px;
+  }
+
+  .grid-item{
+      /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+  }
+
+ .first{
+    /* font-size: 110%;
+    font-weight: 600; */
+    font-size: 26px;
+    line-height: 1.25;
+
+    
+}
+.second{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+}
+
+.medium-font{
+    font-size: 20px
+}
+
+.styled-border{
+    box-shadow: 0 0 10px -1px rgba(0,0,0,.1);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.05);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.activity::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .activity{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.user-reviews::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .user-reviews{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.user-reviews::-webkit-scrollbar {
+    display: none;
+  }
+
+ 
+.first-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+  @media (max-width: 750px) { 
+    .activity{
+        width: 100%;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .grid-item{
+        flex-direction: row;
+        /* align-items: flex-end; */
+        align-items: center;
+        border: 1px solid rgba(0,0,0,.1);
+        margin-bottom: 1px;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 20px;
+        /* border-radius: 2px ; */
+
+    }
+    .grid-item span{
+        margin-right: 10px;
+    }
+    .first{
+        font-size: 20px;    
+    }
+    .first-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .activity{
+        max-height: 700px;
+    }
+    .user-reviews{
+        max-height: 600px;
+    }
+    .userWatchlist{
+        max-height: 600px;
+        overflow-y: scroll;
+        padding: 0 10px ;
+    }
+
+   }
+  
