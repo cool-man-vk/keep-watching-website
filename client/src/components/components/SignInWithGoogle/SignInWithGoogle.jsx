@@ -15,7 +15,7 @@ const SignInWithGoogle =  () => {
     const authContext = useContext(AuthContext)
     const {signInWithGoogle} = authContext
     return(<div ><button onClick={signInWithGoogle}>Signin with Google </button>
-    <a href="https://moviedatabase-1bhw.onrender.com/api/auth/google">Signin with google Link</a>
+    <a href="http://localhost:5000/api/auth/google">Signin with google Link</a>
     </div>)
 }
 

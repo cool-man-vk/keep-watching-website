@@ -17,7 +17,7 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
 const router = express.Router();
 router.use(cors({
-    origin: "https://moviedatabase-1bhw.onrender.com/",      // <------- host for the react app
+    origin: "http://localhost:5000",      // <------- host for the react app
     credentials: true
 }));
 router.use(passport.initialize());
@@ -109,7 +109,7 @@ passport.deserializeUser( (user, cb) => {
 passport.use(new GoogleStrategy({
     clientID: keys.GOOGLE.clientID,
     clientSecret: keys.GOOGLE.clientSecret,
-    callbackURL: "https://moviedatabase-1bhw.onrender.com/api/auth/google/callback"
+    callbackURL: "http://localhost:5000/api/auth/google/callback"
 },
 async (accessToken, refreshToken, profile, cb) => {
 
@@ -202,7 +202,7 @@ passport.authenticate("google"),
     // console.log("req.body = ", req.body)
     // id = req.user.id
 
-    // res.redirect("https://keep-watching-frontend.onrender.com/")
+    // res.redirect("http://localhost:3000/")
     res.json(req.user)
 });
 

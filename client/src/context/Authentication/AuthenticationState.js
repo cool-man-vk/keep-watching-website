@@ -134,7 +134,7 @@ const AuthState = (props) => {
 	//  Signin with Google
 	const signInWithGoogle = async() => {
 		try {
-			const res = await axios.get("https://keep-watching-frontend.onrender.com/api/auth/google")
+			const res = await axios.get("localhost:5000/api/auth/google")
 			// console.log("RES.data in signin with google= ", res.data)
 			dispatch({
 				type: LOGIN_SUCCESS,
