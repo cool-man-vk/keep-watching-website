@@ -28,9 +28,7 @@ const Movie = (props) => {
         loadUser()
         // eslint-disable-next-line
     }, [isAuthenticated])
-
     const [selection, setSelection] = useState("Actors")
-
     const movieId = props.match.params.movieId
     const [movie, loading, error] = useMovieFetch(movieId)
 
@@ -42,7 +40,6 @@ const Movie = (props) => {
     }
     return (
         <>
-            {/* <Navigation movie={movie.original_title} /> */}
             <MovieInfo movie={movie} />
             <MovieInfoBar time={movie.runtime} budget={movie.budget} revenue={movie.revenue} />
             <Rating movieID={movie.id} />
@@ -63,11 +60,6 @@ const Movie = (props) => {
 
             }
 
-            {/* <div className={`watchlist-container `}>
-                <button className={`remove-watchlist-button `} onClick={handelClick}>
-                    <Link to={"/user/" + user._id}><div className="`add-watchlist-button ">Go to Watchlist</div></Link>
-                </button>
-            </div> */}
 
             {selection === "Actors" && <Grid header="Actors">
                 {
